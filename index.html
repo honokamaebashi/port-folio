@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="2XJ2Va-mUvnTZuxDGsUkpVTXcxcrHRhEPcJdlNoYrhc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAKUSAKUSHOPⅠ送料無料商品やあす楽商品多数♪</title>
+    <meta name="description" content="Saku-Sakuオリジナル商品を中心に、バッグや財布、ベルトなどさまざまなファッション雑貨を扱う専門通販サイトです。質の良いものを安くお客様に提供します。新着商品も続々入荷♪">
+    <link href="saku_a/sakusaku/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="saku_a/sakusaku/style.css">
+<!--     <link rel="stylesheet" href="saku_a/sakusaku/newstyle.css"> -->
+    <link rel="stylesheet" type="text/css" href="saku_a/sakusaku/css/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="saku_a/sakusaku/css/slick-theme.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="saku_a/sakusaku/css/cal.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../sakusaku/js/pagetop.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/slick.min.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/new.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/readmore.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/pagetop.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/jquery.layerBoard.js"></script>
+    <script type="text/javascript" src="saku_a/sakusaku/js/jquery.layerBoarda.js"></script>
+    <script src="saku_a/sakusaku/js/view_timer.js"></script>
+    <script>
+      (function(){
+        var html = document.getElementsByTagName('html')||[];
+        html[0].classList.add('enable-javascript');
+        window.addEventListener("load", function(){
+          html[0].classList.add('window-load');
+        }, false);
+      })();
+    </script>
+    <script>
+    $(function() {
+    $('.center-item').slick({
+      autoplay: true,
+      autoplaySpeed: 2200,
+      speed: 500,
+      slidesToShow: 1,
+      centerMode: true, //要素を中央寄せ
+      centerPadding:'600px', //両サイドの見えている部分のサイズ
+      autoplay:true, //自動再生
+      variableWidth: true,
+      dots:true,
+      edgeFriction: 0,
+      lazyLoad: 'progressive'
+      });
+    });
+
+    $(function(){
+    $("#slider").slick({
+      dotsClass: 'slide-dots'
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(function() {
+        console.log($(location))
+           $('.slider_b').slick({
+              mobileFirst:true,
+              autoplay:true,
+              autoplaySpeed: 2000,
+              speed: 1500, 
+              infinite: true,
+              dots:false,
+              pauseOnHover: false,
+              slidesToShow: 1,
+              arrows: true,
+              prevArrow: '<button type="button" class="slick-b-prev">◀</button>',
+              nextArrow: '<button type="button" class="slick-b-next">▶</button>'
+              });
+            });
+
+    </script>
+    <script type="text/javascript">
+      $("document").ready(function(){
+      $('.center').slick({
+        centerMode: true,
+        centerPadding:'120px',
+        variableWidth: true,
+        prevArrow: '<button type="button" class="slick-s-prev"><img src="saku_a/sakusaku/images/prew.png"></button>',
+        nextArrow: '<button type="button" class="slick-s-next"><img src="saku_a/sakusaku/images/next.png"></button>',
+        slidesToShow: 4,
+        responsive:[
+          {
+              breakpoint: 1024,
+              settings:{
+                  slidesToShow:3,
+              }
+          },
+          {
+              breakpoint: 768,
+              settings:{
+                  slidesToShow:3,
+              }
+          },
+          {
+              breakpoint: 480,
+              settings:{
+                  slidesToShow:2,
+              }
+          },
+      ]
+      });
+    });    
+    function demo02() {
+        $(this).toggleClass("active").next().slideToggle(300);
+      }
+       
+      $(".switch .toggle").click(demo02);
+    </script>
+
+    <script>
+        $(document).on('ready', function() {
+        $(".regular_2").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: '<button type="button" class="slick-s-prev"><img src="saku_a/sakusaku/images/shoplist/prew.png"></button>',
+          nextArrow: '<button type="button" class="slick-s-next"><img src="saku_a/sakusaku/images/shoplist/next.png"></button>',
+          dots:false,
+        });
+      });
+    </script>
+    <!--for Scroll fix header -->
+    <script>
+    //scroll fix header
+    $(function () {
+      "use strict";
+      var flag = "view";
+     
+      $(window).on("scroll", function () {
+        // scrollTop()が「200」より大きい場合
+       //画面トップから、ナビゲーションメニューまでの高さ（ピクセル）を指定すれば、メニュースクロールで
+       //消えていくタイミングでヘッダが表示されて固定される。  
+        
+        if ($(this).scrollTop() > 250) {
+          if (flag === "view") {
+            $(".fix-header").stop().css({opacity: '1.0'}).animate({
+       //”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+              top: 0
+            }, 550);
+     
+            flag = "hide";
+          }
+        } else {
+          if (flag === "hide") {
+            $(".fix-header").stop().animate({top:"-108px",opacity: 0}, 500);
+        //上にあがり切ったら透過度を0%にして背景が生きるように
+            　　　　//”▲.fix-header”の部分は固定ヘッダとして表示させるブロックのID名もしくはクラス名に
+            flag = "view";
+          }
+        }
+      });
+    });
+    </script>
+
+
+
+
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="container-fluid pd-0">
+      <div class="col-xs-12 pd-0">
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 header1">
+                <div class="row mb-2">
+                  <h1 class="col-sm-5 col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1 col-sm-offset-0"><a href="https://www.rakuten.co.jp/saku-saku-shop/" target="_blank"><img src="saku_a/sakusaku/images/pagetop/logo_sakusaku.png" alt="sakusakushop" class="gazou mt-4"></a></h1>
+                  <div class="col-sm-7 col-md-4 col-xs-12 header11">
+                    <div class="icon text-right hidden-xs mt-1">
+                      <p class="review mb-2"><a href="https://review.rakuten.co.jp/shop/4/281585_281585/1.1/?l2-id=review_PC_il_iteminfo_07" style="color:#e41b43;" target="_blank">ショップレビュー：<img src="saku_a/sakusaku/images/pagetop/review.png"><span class="review2">4.76</span></a></p>
+                      <div class="mr-2">
+                        <p class="icon2"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html" target="_blank"><i class="fas fa-info"></i></a></p>
+                        <p class="icon2"><a href="https://www.rakuten.co.jp/saku-saku-shop/news.html?" target="_blank"><i class="far fa-envelope"></i></a></p>
+                        <p class="icon2"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=205&shop_bid=281585" target="_blank"><i class="far fa-heart"></i></a></p>
+                        <p class="icon2"><a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cartall/?shop_bid=281585&l2-id=shop_header_cart" target="_blank"><i class="fas fa-shopping-cart"></i></a></p>
+                      </div>
+                    </div>
+                    <div class="icon text-center visible-xs hidden-sm">
+                      <p class="review"><a href="https://review.rakuten.co.jp/shop/4/281585_281585/1.1/?l2-id=review_PC_il_iteminfo_07" style="color:#e41b43;" target="_blank">ショップレビュー：<img src="saku_a/sakusaku/images/pagetop/review.png"><span class="review2">4.76</span></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    
+    <nav>
+      <div class="container-fluid pd-0">
+        <div class="row">
+          <div class="wrap">
+            <!-- <p class="sale_page"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/news/index.html" target="_blank">ＧＷの営業についてお知らせ</a></p> -->
+          </div>
+          <div class="col-xs-12 nav1">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <nav class="row"><!-- ナビゲーション -->
+                    <ul class="menu col-xs-12 pd-0">
+                        <li class="menu__mega">
+                            <a href="https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%83%83%E3%82%B0/?sid=281585" class="init-bottom">バッグ</a>
+                            <ul class="menu__second-level">
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/totebag.jpg" width="40px"></span>トートバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%8F%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/handbag.jpg" width="40px"></span>ハンドバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/sholderbag.jpg" width="40px"></span>ショルダーバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/rucksack.jpg" width="40px"></span>リュック</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%9C%E3%83%87%E3%82%A3%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/bodybag.jpg" width="40px"></span>ボディバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%90%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/cambasbag.jpg" width="40px"></span>キャンバスバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%A8%E3%82%B3%E3%83%90%E3%83%83%E3%82%B0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/ecobag.jpg" width="40px"></span>エコバッグ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%83%83%E3%82%B0+%E3%83%A1%E3%83%B3%E3%82%BA/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/mensbag.jpg" width="40px"></span>メンズバッグ</a></li>
+                                <!-- 他メニュー省略 -->
+                            </ul>
+                        </li>
+                        <li class="menu__mega">
+                            <a href="https://search.rakuten.co.jp/search/mall/%E8%B2%A1%E5%B8%83/?sid=281585" class="init-bottom">財布</a>
+                            <ul class="menu__second-level">
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E9%95%B7%E8%B2%A1%E5%B8%83/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/longwallet.jpg" width="40px"></span>長財布</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E8%B2%A1%E5%B8%83+%E4%BA%8C%E3%81%A4%E6%8A%98%E3%82%8A/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/shortwallet.jpg" width="40px"></span>折財布</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%9F%E3%83%8B%E8%B2%A1%E5%B8%83/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/miniwallet.jpg" width="40px"></span>ミニ財布</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B3%E3%82%A4%E3%83%B3%E3%82%B1%E3%83%BC%E3%82%B9/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/coincase.jpg" width="40px"></span>コインケース</a></li>
+                                <!-- 他メニュー省略 -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://search.rakuten.co.jp/search/mall/%E3%83%99%E3%83%AB%E3%83%88/?sid=281585" class="init-bottom">ベルト</a>
+                        </li>
+                        <li class="menu__mega">
+                            <a href="https://search.rakuten.co.jp/search/mall/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0/?sid=281585" class="init-bottom">ビジネス</a>
+                            <ul class="menu__second-level">
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0+%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/ladysbusiness.jpg" width="40px"></span>レディースビジネス</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0+%E3%83%A1%E3%83%B3%E3%82%BA/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/mensbusiness.jpg" width="40px"></span>メンズビジネス</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E6%97%A5%E6%9C%AC%E8%A3%BD/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/japanbusiness.jpg" width="40px"></span>日本製ビジネス</a></li>
+                                <!-- 他メニュー省略 -->
+                            </ul>
+                        </li>
+                        <li class="menu__mega">
+                            <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000176/" class="init-bottom">小物</a>
+                            <ul class="menu__second-level">
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%90%E3%83%83%E3%82%B0%E3%83%81%E3%83%A3%E3%83%BC%E3%83%A0/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/backcharm.jpg" width="40px"></span>バッグチャーム</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E5%8C%96%E7%B2%A7%E3%83%9D%E3%83%BC%E3%83%81/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/porch.jpg" width="40px"></span>ポーチ</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E5%90%8D%E5%88%BA%E5%85%A5%E3%82%8C/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/cardcase.jpg" width="40px"></span>名刺入/カードケース</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E5%AE%9A%E6%9C%9F%E5%85%A5%E3%82%8C/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/passcase.jpg" width="40px"></span>パスケース</a></li>
+                                <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B9/?sid=281585"><span class="cate_icon"><img src="saku_a/sakusaku/images/kiicase.jpg" width="40px"></span>キーケース</a></li>
+                                <!-- 他メニュー省略 -->
+                            </ul>
+                        </li>
+                        <li class="menu__mega">
+                            <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000217/" class="init-bottom" target="_blank">コスメ</a>
+                        </li>
+                        <li class="menu__mega">
+                          <a href="https://search.rakuten.co.jp/search/mall/%E5%B8%BD%E5%AD%90/?sid=281585" class="init-bottom" target="_blank">帽子</a>
+                      </li>
+
+                        <!-- 他グローバルナビメニュー省略 -->
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pd-0">
+            <!-- <span class="view_timer" data-end-date="2022/06/11 01:59">
+              <h2 class="mb-1"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/event/index.html" target="_blank"><img src="saku_a/event/images/1200_top_event.jpg" class="gazou"></a></h2>
+            </span> -->
+            <!-- <span class="view_timer" data-start-date="2022/06/11 02:00"> -->
+            <h2 class="mb-1"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/event/index.html" target="_blank"><img src="saku_a/event/images/1200_top_event_m.jpg" class="gazou"></a></h2>
+            <!-- </span> -->
+          <h3 class="coupon_title">Saku-sakuで使えるお得なクーポンをGET♪</h3>
+          <p class="coupon_top"><a href="https://link.rakuten.co.jp/0/095/920/" target="_blank"><img src="saku_a/event/images/linebana.jpg" class="gazou"></a></p>
+          <!-- <p class="coupon_top"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=TUw4Qi05OEg4LVhIUkEtV1RIWQ--&rt=" target="_blank"><img src="saku_a/event/images/coupon_1000_2023.jpg" class="gazou"></a></p> -->
+          
+          <div class="col-xs-4 coupon">
+            <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=Uzc4WS1MNElYLUFKQ04tNVk3VA--&rt=" target="_blank"><img src="saku_a/event/images/coupon_500.jpg" class="gazou"></a>
+          </div>
+          <div class="col-xs-4 coupon">
+            <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=VFVKSS0yNUs2LUo5RzYtWVdTUw--&rt=" target="_blank"><img src="saku_a/event/images/coupon_300.jpg" class="gazou"></a>
+          </div>
+          <div class="col-xs-4 coupon">
+            <a href="https://coupon.rakuten.co.jp/getCoupon?getkey=TkZLSi1WSE1QLU1IVjctTlRLWA--&rt=" target="_blank"><img src="saku_a/event/images/coupon_100.jpg" class="gazou"></a></a>
+          </div>
+      </div>
+        <h2 class="header9_1 hidden-xs">3,980円以上ご購入のお客様は<span style="color: #cf1c1c;">送料無料</span>。<i class="fas fa-truck-moving"></i><span style="color: #cf1c1c;">平日12時</span>までのご注文は当日発送</h2>
+        <h2 class="header9_1 visible-xs">3,980円以上ご購入のお客様は<span style="color: #cf1c1c;">送料無料</span>。<br><i class="fas fa-truck-moving"></i><span style="color: #cf1c1c;">平日12時</span>までのご注文は当日発送</h2>
+    <!-- <p class="sale_page"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/news/index.html" target="_blank">ＧＷ休みの営業についてお知らせ</a></p> -->
+</div>
+    </nav>
+    <div class="container-fluid c_sp pd-0">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="mb-3">
+            <ul class="center-item"><!-- トップスライドメイン画像 -->
+              <li><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/event/index.html" target="_blank"><img src="saku_a/sakusaku/images/slide_eventss.jpg" alt="event" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0+%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9/-/tg1019630-tg1019649-tg1043263/?sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_totebagss.jpg" alt="トートバッグ" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E5%8C%96%E7%B2%A7%E3%83%9D%E3%83%BC%E3%83%81/?s=6&sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_cosme.jpg" alt="化粧ポーチ" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0+%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9/110942/tg1030930/?s=12&sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_minibagss.jpg" alt="ショルダーバッグ" class="gazou"></a></li>             
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0+%E3%83%A1%E3%83%B3%E3%82%BA/-/tg1005530/?sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_business.jpg" alt="ビジネス" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B9+%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%AD%E3%83%BC/?sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_keycase.jpg" alt="キーウォレット" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E8%B2%A1%E5%B8%83+%E3%83%9F%E3%83%8B+%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9/565211/?s=4&sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_miniwallet.jpg" alt="ミニ財布" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E5%B8%BD%E5%AD%90/?sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_cap.jpg" alt="帽子" class="gazou"></a></li>
+              <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%AA%E3%83%A5%E3%83%83%E3%82%AF+%E5%A4%A7%E5%AE%B9%E9%87%8F/110974/?sid=281585" target="_blank"><img src="saku_a/sakusaku/images/slide_ruck.jpg" alt="リュック" class="gazou"></a></li>
+            </ul>
+
+            <!-- <ul class="center-item">
+            <li><a href="https://event.rakuten.co.jp/gooda/shop/gooda_2208p1282.html" target="_blank">
+              <img src="https://event.rakuten.co.jp/gooda/bn/20131015/1200_200_t.jpg" alt="GOODA" width="1200" border="0" /></a></li>
+            </ul> -->
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-xs-12">
+          <section class="mt-3">
+            <ul>                    
+              <li><a href="https://event.rakuten.co.jp/gooda/shop/gooda_2208p1282.html" target="_blank">
+                <img src="https://event.rakuten.co.jp/gooda/bn/20131015/1200_200_t.jpg" alt="GOODA" class="gazou" border="0"></a>
+              </li>
+              <li>
+                <img src="saku_a/event/images/sai_review.gif" class="gazou mt-3">
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>          
+
+
+
+    <div class="container">
+      <div><!-- TOP下検索＆スライド -->
+        <div class="row header7 mb-3">
+          <div class="col-sm-6 col-md-5 col-xs-10 col-xs-offset-1 col-sm-offset-0 pd-0 header12 text-center">  
+            <div class="slider_b">
+              <p><a href="https://event.rakuten.co.jp/campaign/card/pointday/" target="_blank"><img src="saku_a/sakusaku/images/pagetop/top32041-01.jpg" class="gazou"></a></p>
+              <p><a href="https://event.rakuten.co.jp/campaign/point-up/everyday/point/" target="_blank"><img src="saku_a/sakusaku/images/pagetop/top32041-02.jpg" class="gazou"></a></p>
+              <p><a href="https://event.rakuten.co.jp/campaign/card/cityx2/" target="_blank"><img src="saku_a/sakusaku/images/pagetop/top32041-04.gif" class="gazou"></a></p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-2 col-lg-4 col-lg-offset-3 col-xs-12 header13">
+            <tr class="header10">
+              <td align="center text-center">
+                <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" style="margin: 0; display: inline-block;" accept-charset="euc-jp" method="get" name="searchbox">
+                  <input type="hidden" name="sv" value="6">
+                  <input type="hidden" name="sid" value="281585">
+                  <input type="hidden" name="su" value="saku-saku-shop">
+                  <input type="hidden" name="sn" value="Saku-Saku">                                                        
+                  <input type="text" name="sitem" maxlength="90" height="30px" class="header5" placeholder="ショップ内検索" onclick="document.charset='EUC-JP'; document.rakutenSubmit.submit();">
+                  <input type="hidden" name="f" value="A"><input type="image" value="検索する" src="saku_a/sakusaku/images/pagetop/search.gif" formtarget="_blank">
+                </form>                      
+              </td>
+            </tr>
+            <div class="sm-2 mt-2">
+              <p class="header6"><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000168/" target="_blank" class="mb-2"># バッグ</a><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000169/" target="_blank"># 財布</a><a href="https://search.rakuten.co.jp/search/mall/%E5%B8%BD%E5%AD%90/?sid=281585" target="_blank"># 帽子</a><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000176/" target="_blank"># 小物</a><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000175/" target="_blank"># ビジネス</a></p><!-- 各カテゴリーページに飛ばす -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="wrap">
+        <p class="sale_page mt-1"><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/news/index.html" target="_blank">年末年始の営業についてお知らせ</a></p>
+      </div> -->
+
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-xs-12">
+              <section class="mt-5">
+
+                <ul class="up_01new">                    
+                  <li><a href="https://search.rakuten.co.jp/search/mall/%E5%B8%BD%E5%AD%90/?sid=281585"><img src="saku_a/event/images/800_330_cap.jpg" target="_blank" class="gazou"></a></li>
+                  <li><a href="https://search.rakuten.co.jp/search/mall/?review=4.5&sid=281585" target="_blank"><img src="saku_a/event/images/800_330_review.jpg" class="gazou"></a></li>
+                  <li><a href="https://search.rakuten.co.jp/search/mall/%E3%83%9F%E3%83%8B/?s=4&sf=1&sid=281585"><img src="saku_a/event/images/800_330_mini.jpg" target="_blank" class="gazou"></a></li>
+                  <li><a href="https://search.rakuten.co.jp/search/mall/%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%90%E3%83%83%E3%82%B0+%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9+%E5%B0%8F%E3%81%95%E3%82%81/?s=4&sid=281585"><img src="saku_a/event/images/800_330_shoulder.jpg" target="_blank" class="gazou"></a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+  
+
+      <div class="new mb-10">
+        <ul class="tab-group mb-1">
+          <li class="tab is-active">NEW ITEM'S</li>
+          <li class="tab">RECOMMEND</li>
+        </ul>
+        
+        <!--タブを切り替えて表示するコンテンツ-->
+        <div class="panel-group">
+          <div class="panel is-show text-center">
+            <div class="r_box_new r--3 mb-1">    
+              <!-- スライダーのコンテナ -->
+              <section class="swiper">
+                <!-- 必要に応じたwrapper -->
+                <ul class="swiper-wrapper">
+                  <!-- NEWITEM スライド -->
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-skb018sd4/" target="_blank"><img src="saku_a/event/images/skb018sd4.jpg" alt="クラッチバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-skb021ft5a/" target="_blank"><img src="saku_a/event/images/skb021ft5.jpg" alt="ショルダーバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-saku507/" target="_blank"><img src="saku_a/event/images/saku507ss.jpg" alt="ポーチ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku505/" target="_blank"><img src="saku_a/event/images/saku505.jpg" alt="ショルダー"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku506/" target="_blank"><img src="saku_a/event/images/saku506.jpg" alt="ポーチ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-r000290/" target="_blank"><img src="saku_a/event/images/r000290.jpg" alt="バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r450001/" target="_blank"><img src="saku_a/event/images/r450001.jpg" alt="バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r450002-3/" target="_blank"><img src="saku_a/event/images/r450002-3.jpg" alt="バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-r790051/" target="_blank"><img src="saku_a/event/images/r790051.jpg" alt="バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-r650004/" target="_blank"><img src="saku_a/event/images/r650004.jpg" alt="バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/r400513/" target="_blank"><img src="saku_a/event/images/r400513.jpg" alt="キャスケット"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r400481/" target="_blank"><img src="saku_a/event/images/r400481.jpg" alt="バケットハット"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/r400522/" target="_blank"><img src="saku_a/event/images/r400522.jpg" alt="バケットハット"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r400428/" target="_blank"><img src="saku_a/event/images/r400428.jpg" alt="ハット"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r400138/" target="_blank"><img src="saku_a/event/images/r400138.jpg" alt="HAT"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/s-r332537/" target="_blank"><img src="saku_a/event/images/r332537.jpg" alt="ミニ財布"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-r332428/" target="_blank"><img src="saku_a/event/images/r332428.jpg" alt="リュック"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku201/" target="_blank"><img src="saku_a/event/images/saku201.jpg" alt="リュック"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/miniature" target="_blank"><img src="saku_a/event/images/miniature.jpg" alt="リュック"></a></li>
+                  
+                </ul>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-scrollbar"></div>
+                <!-- 必要に応じてナビボタン -->
+                <!--<div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+              </section>
+            </div>
+          </div>
+          
+          <!--RECOMMEND-->
+          <div class="panel text-center">
+            <div class="r_box_new mb-3">
+              <!-- スライダーのコンテナ -->
+            <section class="swiper">
+              <!-- 必要に応じたwrapper -->
+              <ul class="swiper-wrapper">
+                <!-- RECOMMEND スライド -->
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku005/" target="_blank"><img src="saku_a/event/images/saku005_new.jpg" alt="トートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-saku003a/" target="_blank"><img src="saku_a/event/images/saku003_new.jpg" alt="ミニトートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku103/" target="_blank"><img src="saku_a/event/images/saku103.jpg" alt="お稽古バッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku102/"  target="_blank"><img src="saku_a/event/images/saku102_1.jpg" alt="ショルダーバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-zk01/" target="_blank"><img src="saku_a/event/images/zk01_new.jpg" alt="化粧ポーチ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku104/" target="_blank"><img src="saku_a/event/images/saku104_new.jpg" alt="キャンバストートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/rk-ditrail1-5/" target="_blank"><img src="saku_a/event/images/dir001.jpg" alt="防災リュック"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/business-smb-001/" target="_blank"><img src="saku_a/event/images/smb001_new.jpg" alt="ビジネスリュック"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts911/"  target="_blank"><img src="saku_a/event/images/dts911_1.jpg" alt="名刺入れ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-saku007/" target="_blank"><img src="saku_a/event/images/saku007_1.jpg" alt="大きめのトートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/s-dts025/" target="_blank"><img src="saku_a/event/images/dts025.jpg" alt="フラグメントケース"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku004/" target="_blank"><img src="saku_a/event/images/saku004_new.jpg" alt="メンズのトートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/belt-ld-dtbl2223/" target="_blank"><img src="saku_a/event/images/dtbl2223.jpg" alt="牛革の細いベルト"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku001/"  target="_blank"><img src="saku_a/event/images/saku101.jpg" alt="トートバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku501/"  target="_blank"><img src="saku_a/event/images/saku501.jpg" alt="ショルダーバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku502/"  target="_blank"><img src="saku_a/event/images/saku502.jpg" alt="ショルダーバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku107/"  target="_blank"><img src="saku_a/event/images/saku107.jpg" alt="ショルダーバッグ"></a></li>
+                <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-saku008/"  target="_blank"><img src="saku_a/event/images/saku008.jpg" alt="ハンドバッグ"></a></li>  
+              </ul>
+              <!-- 必要に応じてページネーション -->
+              <div class="swiper-scrollbar"></div>
+              <!-- 必要に応じてナビボタン -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+            </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pick">
+        <div class="tab_box">
+          <div class="btn_area mb-1">
+            <p class="tab_btn active">BEST ITEM'S</p>
+            <p class="tab_btn">SNS</p>
+          </div>
+          <div class="panel_area">
+            <div class="tab_panel active">
+              <div class="r_box_new r--3 mb-1">    
+                <!-- スライダーのコンテナ -->
+                <section class="swiper">
+                  <!-- 必要に応じたwrapper -->
+                  <ul class="swiper-wrapper">
+                    <!-- BEST ITEM'S スライド -->
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-zk01/"  target="_blank"><img src="saku_a/event/images/zk01_new.jpg" alt="化粧ポーチ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku004/" target="_blank"><img src="saku_a/event/images/saku004_new.jpg" alt="メンズのトートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-saku003a/"  target="_blank"><img src="saku_a/event/images/saku003_new.jpg" alt="ミニトートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku501/"  target="_blank"><img src="saku_a/event/images/saku501.jpg" alt="ショルダーバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku103/"  target="_blank"><img src="saku_a/event/images/saku103_1.jpg" alt="お稽古バッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku005/"  target="_blank"><img src="saku_a/event/images/saku005_new.jpg" alt="トートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/rk-ditrail1-5/"  target="_blank"><img src="saku_a/event/images/dir001.jpg" alt="防災リュック"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r160257/"  target="_blank"><img src="saku_a/event/images/saku503_new.jpg" alt="キーケース"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku102/"  target="_blank"><img src="saku_a/event/images/saku102_new.jpg" alt="ショルダーバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku104/"  target="_blank"><img src="saku_a/event/images/saku104_1.jpg" alt="キャンバストートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts901/"  target="_blank"><img src="saku_a/event/images/dts901_1.jpg" alt="キャンバストートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-newsaku001/"  target="_blank"><img src="saku_a/event/images/saku101.jpg" alt="トートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts902/"  target="_blank"><img src="saku_a/event/images/dts902_1.jpg" alt="キャンバストートバッグ"></a></li>
+                    <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku502/"  target="_blank"><img src="saku_a/event/images/saku502_1.jpg" alt="ショルダーバッグ"></a></li>
+                  </ul>
+                  <!-- 必要に応じてページネーション -->
+                  <div class="swiper-scrollbar"></div>
+                  <!-- 必要に応じてナビボタン -->
+                  <!--<div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+                </section>
+              </div>
+            </div>
+            <div class="tab_panel">
+              <div class="r_box_new r--3 mb-1">    
+                <!-- スライダーのコンテナ -->
+                <section class="swiper">
+                <!-- 必要に応じたwrapper -->
+                <ul class="swiper-wrapper">
+                  <!-- SNS スライド -->
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku103/"  target="_blank"><img src="saku_a/event/images/saku103_sns.jpg" alt="お稽古バッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-zk01/"  target="_blank"><img src="saku_a/event/images/zk01_sns.jpg" alt="化粧ポーチ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/tote-saku003a/"  target="_blank"><img src="saku_a/event/images/saku003_sns.jpg" alt="ミニトートバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts911/"  target="_blank"><img src="saku_a/event/images/dts911_sns.jpg" alt="名刺入れ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku102/"  target="_blank"><img src="saku_a/event/images/saku102_sns.jpg" alt="ショルダーバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku104/"  target="_blank"><img src="saku_a/event/images/saku104_sns.jpg" alt="キャンバストートバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts902/"  target="_blank"><img src="saku_a/event/images/dts902_sns.jpg" alt="キーウォレット"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku501/"  target="_blank"><img src="saku_a/event/images/saku501_sns.jpg" alt="ショルダーバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku107/"  target="_blank"><img src="saku_a/event/images/saku107_sns.jpg" alt="ショルダーバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/bag-saku502/"  target="_blank"><img src="saku_a/event/images/saku502_sns.jpg" alt="ショルダーバッグ"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-r160257/"  target="_blank"><img src="saku_a/event/images/saku503_sns.jpg" alt="Wスマートキーケース"></a></li>
+                  <li class="swiper-slide"><a href="https://item.rakuten.co.jp/saku-saku-shop/k-dts903/"  target="_blank"><img src="saku_a/event/images/dts903_sns.jpg" alt="キーウォレット"></a></li>
+                </ul>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-scrollbar"></div>
+                <!-- 必要に応じてナビボタン -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+              </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 class="new_t">CATEGORY</h4>
+            <section class="mt-5">
+              <ul class="up_01">
+                <li><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000197/?s=4#risFil" target="_blank"><img src="saku_a/event/images/800_330_new.jpg" class="gazou"></a></li>
+                <li><a href="https://search.rakuten.co.jp/search/mall/%E9%80%81%E6%96%99%E7%84%A1%E6%96%99/?s=6&sid=281585"><img src="saku_a/event/images/800_330_free.jpg" target="_blank" class="gazou"></a></li>
+                <li><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/event/index.html"><img src="saku_a/event/images/800_330_event.jpg" target="_blank" class="gazou"></a></li>
+                <li><a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000195/"><img src="saku_a/event/images/800_330_present.jpg" target="_blank" class="gazou"></a></li>
+              </ul>
+            </section>
+            <section class="category mb-2 text-center">
+              <ul>
+                <li>
+                  <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000168/" target="_blank"><span class="cate_icon"><img src="saku_a/sakusaku/images/totebag.jpg" width="40px"></span>BAG</a></li>
+                </li>
+                <li>
+                    <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000169/" target="_blank"><span class="cate_icon"><img src="saku_a/sakusaku/images/miniwallet.jpg" width="40px"></span>WALLET</a>
+                </li>
+                <li>
+                    <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000170/" target="_blank"><span class="cate_icon"><img src="saku_a/sakusaku/images/belt.jpg" width="40px"></span>BELT</a>
+                </li>
+                <li>
+                    <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000175/" target="_blank"><span class="cate_icon"><img src="saku_a/sakusaku/images/ladysbusiness.jpg" width="40px"></span>BUSINESS</a>
+                </li>
+                <li>
+                  <a href="https://item.rakuten.co.jp/saku-saku-shop/c/0000000176/" target="_blank"><span class="cate_icon"><img src="saku_a/sakusaku/images/porch.jpg" width="40px"></span>GOODS</a>
+                </li>
+              </ul>
+            </section>
+            <div id="price-search2" class="hidden-xs">
+              <h1 id="brand-logo">価格帯で探す</h1>
+              <ul>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=&max=999" target="_brank">～￥999</a>
+                </li>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=1000&max=1999" target="_brank">￥1,000～￥1,999</a>
+                </li>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=2000&max=2999" target="_brank">￥2,000～￥2,999</a>
+                </li>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=3000&max=3999" target="_brank">￥3,000～￥3,999</a>
+                </li>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=4000&max=5999" target="_brank">￥4,000～￥5,999</a>
+                </li>
+                <li>
+                  <a href="https://search.rakuten.co.jp/search/inshop-mall?f=1&v=2&sid=281585&uwd=1&s=1&p=1&sitem=&st=A&nitem=&min=6000&max=" target="_brank">￥6,000～</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+      <div class="containner-fluid">
+        <div class="row">
+          <div class="col-xs-12 text-center insta1">
+              <h4 class="new_t">INSTAGRAM</h4>
+              <div class="row mt-2">
+                <div class="col-xs-12 col-sm-7 sp_in">
+                  <!-- SnapWidget -->
+                  <iframe src="https://snapwidget.com/embed/912221" class="snapwidget-widget hidden-xs" allowtransparency="true" frameborder="0" scrolling="no" style="border: solid 0px #f3f3f3; margin: 2%; overflow:hidden;  width:3000px; height:300px"></iframe>
+                  <iframe src="https://snapwidget.com/embed/912221" class="snapwidget-widget visible-xs" allowtransparency="true" frameborder="0" scrolling="no" style="border: solid 0px #f3f3f3; margin: 2%; overflow:hidden;  width:1300px; height:150px"></iframe>
+
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+      <div class="sns">
+        <div class="container">
+          <div class="row">
+            <div class="sns2">
+              <li><a href="https://link.rakuten.co.jp/0/095/920/" target="_brank"><i class="fab fa-line pr-5 sns3"></i>LINE@</a></li>
+              <li><a href="https://link.rakuten.co.jp/1/095/805/" target="_brank"><i class="fab fa-instagram pr-5 sns3"></i>instagram</a></li>
+              <li><a href="https://link.rakuten.co.jp/1/095/792/" target="_brank"><span class="room_icon">R</span>ROOM</a></li>
+              <li><a href="https://mobile.twitter.com/SAKU_SAKU39_JP" target="_brank"><i class="fab fa-twitter pr-5 sns3"></i>twitter</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer1">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  <h2 class="mb-1 sp_title"><img src="saku_a/sakusaku/images/saku_bana.png" class="gazou"></h2>
+                  <div class="mb-2">
+                    <div class="mb-3">
+                      <p class="icon5"><a href="https://www.instagram.com/sakusaku34/?hl=ja"><i class="fab fa-instagram"></i></a></p>
+                      <p class="icon5"><a href="https://www.rakuten.co.jp/saku-saku-shop/news.html?" target="_brank"><i class="far fa-envelope"></i></a></p>
+                      <p class="icon5"><a href="https://my.bookmark.rakuten.co.jp/?func=reg&version=314&svid=205&shop_bid=281585"><i class="fas fa-heart"></i></a></p><!-- お気に入り登録ページにリンク -->
+                    </div>
+                    <div class="text-left footer4">
+                      <p>〒639-2301 奈良県御所市元町405-7</p>
+                      <p>営業時間：10:00-18:00</p>
+                      <p>（土・日・祝日は定休日となります）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                  <h3 class="footer5">お支払い方法</h3>
+                  <div class="mb-2 text-center">
+                    <ul class="footer7">
+                      <li>クレジットカード</li>
+                      <li>銀行振込</li>
+                    </ul>
+                    <ul class="footer7">
+                      <li>後払い決済</li>
+                      <li>apple pay</li>
+                    </ul>
+                    <ul class="footer7">
+                      <li>コンビニ前払</li>
+                      <li>郵便局ATM前払</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                  <h3 class="footer5">サービス</h3>
+                  <div class="mb-2 text-center">
+                    <ul class="footer8 box">
+                      <li><i class="fas fa-truck-moving footer11 mb-1"></i><br><span style="font-weight: bold;">3,980円</span>以上<br>購入で送料無料</li>
+                      <li class="footer9"><i class="fas fa-gift footer11"></i><br><span style="font-weight: bold;">＋100円</span>で<br>ラッピング対応</li>
+                      <li class="footer10"><i class="fas fa-clock footer11"></i><br>12時迄のご注文<br>明日楽対応</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-xs-12">
+                    <section class="col-sm-4 mb-3">
+                      <h3 class="footer5">店舗営業日</h3>
+                      <div class="row">
+                        <div class="mb-3">
+                          <!-- 0番目のカレンダーを入れる箱ね -->
+                          <div id="cal1" class="cal_wrapper">
+                            Calendar Loading
+                          </div>
+                          <p class="mb-3 mt-1" width="200px" style="font-size: 11px; margin: 0 auto; width: 200px;"><span style="color: #FFCCCC">■</span>が定休日です。</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-sm-7 col-sm-offset-1">
+                      <div class="mb-3 footer6">
+                        <h2 class="footer5 mb-1">ショップQ＆A</h2>
+                        <p><i class="fas fa-caret-right mr-1"></i><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#report">ご注文について</a></p>
+                        <p><i class="fas fa-caret-right mr-1"></i><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#pay">支払い方法について</a></p>
+                        <p><i class="fas fa-caret-right mr-1"></i><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#send">送料について</a></p>
+                        <p><i class="fas fa-caret-right mr-1"></i><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#cancel">返品・交換について</a></p>
+                        <p><i class="fas fa-caret-right mr-1"></i><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#outline">会社概要</a></p>
+                      </div>
+                      <div class="mb-3 footer12 text-center">
+                        <p><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/shop/info.html#outline">電話でお問い合わせ</a></a></p>
+                        <p><a href="https://ask.step.rakuten.co.jp/inquiry-form/?page=item-inquiry-top&act=login&ask_text=%E5%95%86%E5%93%81%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E5%95%8F%E5%90%88%E3%82%8F%E3%81%9B&shop_id=281585&shop_name=%EF%BC%B3%EF%BC%A1%EF%BC%AB%EF%BC%B5%E2%88%92%EF%BC%B3%EF%BC%A1%EF%BC%AB%EF%BC%B5&item_id=10000853&item_name=%E3%83%88%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0%20%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%20%E3%83%95%E3%82%A1%E3%82%B9%E3%83%8A%E3%83%BC%E4%BB%98%E3%81%8D%20a4%20%E6%A8%AA%E5%9E%8B%20%E7%84%A1%E5%9C%B0%20%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C%20%E6%9C%AC%E9%9D%A9%E9%A2%A8%20%E5%A4%9A%E6%A9%9F%E8%83%BD%20%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%20%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0%20%E9%80%9A%E5%8B%A4%E3%83%90%E3%83%83%E3%82%B0%20%E8%BB%BD%E3%81%84%20%E9%80%9A%E5%AD%A6%E3%83%90%E3%83%83%E3%82%B0%20%E8%BB%BD%E9%87%8F%20%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9%E3%83%90%E3%83%83%E3%82%B0%20%E3%81%8A%E4%BB%95%E4%BA%8B%E3%83%90%E3%83%83%E3%82%B0%20%E6%97%85%E8%A1%8C%E3%83%90%E3%83%83%E3%82%B0%20%E8%82%A9%E6%8E%9B%E3%81%91%20%E6%A9%9F%E8%83%BD%E6%80%A7%20%E8%B2%B7%E3%81%84%E7%89%A9%E3%83%90%E3%83%83%E3%82%B0%20%E3%83%9E%E3%82%B6%E3%83%BC%E3%82%BA%E3%83%90%E3%83%83%E3%82%B0%20%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88&item_number=cat-saku005&shopurl=saku-saku-shop&pageurl=%2Fsaku-saku-shop%2Ftote-saku005%2F&sell_type=0&l-id=item_PC_Ask" target="_blank">メールでお問い合わせ</a></a></p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 text-center">
+                  <small>Copyright © 2019 Select Saku-Saku. All Rights Reserved.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <a href="#wrap" class="btn btn--circle btn--circle-c btn--shadow" id="page-top"><i class="fas fa-arrow-up"></i></a>
+      <div id="fixed_right_banner">
+          <a href="javascript:void(0)">
+            <a href="https://my.bookmark.rakuten.co.jp/shop?success=true" target="_brank"><img src="saku_a/sakusaku/images/side_01.png"></a>
+          </a>
+          <div><a href="https://www.rakuten.ne.jp/gold/saku-saku-shop/saku_a/event/index.html" target="_brank"><img src="saku_a/sakusaku/images/side_right.png"></a></div>
+      </div>
+      <div id="fixed_left_banner">
+          <a href="javascript:void(0)">
+            <a href="https://www.rakuten.co.jp/saku-saku-shop/news.html?" target="_brank"><img src="saku_a/sakusaku/images/side_03.png" width="170px"  class="mb-3"></a>
+          </a>
+          <div> <a href="https://search.rakuten.co.jp/search/mall/%E3%82%AD%E3%83%AB%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/?s=4&sid=281585"><img src="saku_a/sakusaku/images/side_left.png" width="170px"></a></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="saku_a/sakusaku/js/cal.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="saku_a/sakusaku/css/swiper.css">
+    <script type="text/javascript" src="saku_a/sakusaku/js/swiper.js"></script>
+  </body>
+</html>
